@@ -1,3 +1,7 @@
+CREATE DATABASE peigobd;
+
+use peigobd;
+
 CREATE TABLE `account` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `account_number` varchar(255) DEFAULT NULL,
