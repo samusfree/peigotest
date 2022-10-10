@@ -9,10 +9,12 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  token = "";
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.token = sessionStorage.getItem("access_token") ?? '';
   }
 
   onLogout(): void {
